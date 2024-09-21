@@ -1,20 +1,20 @@
-# Estimation immobilière
+# Property valuation
 
-## Description du projet :  
+## Project description :  
 
-Objectifs :  
-- Estimer le prix d'un bien immobilier selon ses caractéristiques et l'offre actuelle du marché strasbourgeois  
-- Proposer une liste d'annonces disponibles sur internet selon des caractéristiques souhaitées dans les environs de Strasbourg  
-- Créer une base de données de l'offre actuelle du marché immobilier strasbourgeois  
+Objectives:  
+- Estimate the price of a property according to its characteristics and the current offer on the Strasbourg market based on the KNN algorithm.
+- Propose a list of ads available on the internet according to desired characteristics in the Strasbourg area  
+- Create a database of properties currently on the market in Strasbourg  
 
-## Description des fichiers :
-1) `Basics_estimations_fonctions.py` : Regroupement de fonctions utilisées pour faire du scraping et traiter les données des sites immobiliers : Obtenir le HTML, obtenir les liens des annonces, importer les données,...
-2) `orpi_fonctions.py` : Regroupement des fonctions pour obtenir les différentes caractéristiques des logements des annonces du site Orpi
-3) `nexity_fonctions.py` : Regroupement des fonctions pour obtenir les différentes caractéristiques des logements des annonces du site Nexity
-4) `lefigaro_fonctions.py` : Regroupement des fonctions pour obtenir les différentes caractéristiques des logements des annonces du site Lefigaro immobilier
-5) `estimation_immobilier_fonctions.py` : Regroupement des fonctions `estimation()` et `annonces()`
+## Description of files :
+1) `Basics_estimations_functions.py`: Group of functions used to scrap and process data from real estate sites: Get HTML, get links from ads, import data,...
+2) `orpi_fonctions.py` : Grouping of functions to obtain the various characteristics of the residences of the advertisements of the Orpi site
+3) `nexity_fonctions.py` : Grouping of functions to obtain the different characteristics of the properties in the ads on the Nexity site
+4) `lefigaro_fonctions.py` : Grouping of functions to obtain the different characteristics of homes in ads on the Lefigaro immobilier website
+5) `estimation_immobilier_fonctions.py` : Grouping of functions `estimation()` and `annonces()`.
 
-## Libraries nécessaires :  
+## Libraries needed :  
 - requests
 - pandas  
 - numpy  
@@ -22,20 +22,18 @@ Objectifs :
 - scikit-learn
 - scipy 
 
-## Guide d'utilisation :  
+## User guide :  
 
-1) Estimer le prix d'un bien immobilier selon ses caractéristiques
+1) Estimate the price of a property according to its characteristics
 
 ```
 import estimation_immobilier_fonctions as immobilier
 immobilier.estimation()
 ```
 
-2) Obtenir une liste d'annonces disponibles sur internet
+2) Obtain a list of ads available on the internet
 
 ```
 import estimation_immobilier_fonctions as immobilier
 immobilier.annonces()
 ```
-
- 
